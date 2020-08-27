@@ -1,0 +1,11 @@
+<div>
+  <p>topic works!</p>
+  <h3>Add topic</h3>
+  <input type="text" #fn>
+  <button (click)="addTopic(fn)">Add</button>
+
+  <hr>
+  <ol>
+    <li *ngFor="let c of topics">{{c}}</li>
+  </ol>
+</div>
